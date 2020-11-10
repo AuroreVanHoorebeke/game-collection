@@ -9,21 +9,31 @@ card component for elements, tag for category/genre-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My game collection project</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="./assets/debug.css"> -->
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <script src="https://kit.fontawesome.com/eb26b48e6f.js" crossorigin="anonymous"></script>
 
 </head>
 
-<body>
-    <section class="section">
-        <div class="container">
-            <h1 class="title">
-                Aurore's Game Collection
-            </h1>
-            <p class="subtitle">
-                On the following cards, you can find some info about 10 games I play/played.
-            </p>
-        </div>
-    </section>
-
+<body class="container">
+    <header>
+        <section class="section">
+            <div class="columns header is-flex-direction-row">
+                <figure class="image is-128x128">
+                    <img class="is-rounded" src="./assets/pictures/profile-pic.JPG">
+                </figure>
+                <div class="column">
+                    <h1 class="title">
+                        Aurore's Game Collection
+                    </h1>
+                    <p class="subtitle">
+                        On the following cards, you can find some info about 10 games I play/played/plan to play.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </header>
     <div class="columns is-mobile is-multiline is-marginless">
         <!-- is-flex-wrap-wrap is-flex-direction-row is-justify-content-space-around is-align-content-space-around -->
 
@@ -37,6 +47,7 @@ card component for elements, tag for category/genre-->
                     </figure>
                 </div>
                 <div class="card-content">
+                    <span class="tag is-info">FPS</span>
                     <div class="media">
                         <div class="media-content">
                             <p class="title is-4">Overwatch</p>
@@ -47,12 +58,19 @@ card component for elements, tag for category/genre-->
                     <div class="content">
                         Overwatch is a team-based FPS game published in 2016 in which the player can select a hero
                         with its own unique gamestyle and abilities. The 32 heroes are split into three categories:
-                        Tank, Damage and Support. Opposed to some other games of the same style, a good teammate can
+                        Tank, Damage and Support. Opposed to some other games of the same style, teammates can
                         dynamically change heroes to adapt to what's needed in the game instead of being stuck with
                         the same hero.
                     </div>
+
+                    <footer class="card-footer is-flex">
+                        <a href="https://www.youtube.com/watch?v=MujtyCr3UjY" target="_blank"><i class="fab fa-youtube fa-2x is-centered is-justify-content-center"></i></a>
+                    </footer>
+
                 </div>
+
             </div>
+
         </div>
         <!--Game 2-->
         <div class="column is-full-mobile is-one-quarter-desktop is-narrow">
@@ -64,6 +82,7 @@ card component for elements, tag for category/genre-->
                     </figure>
                 </div>
                 <div class="card-content">
+                    <span class="tag is-primary">Digital collectible card games</span>
                     <div class="media">
 
                         <div class="media-content">
@@ -81,6 +100,9 @@ card component for elements, tag for category/genre-->
                         matches,
                         arena games, tavern brawls and battlegrounds.
                     </div>
+                    <footer class="card-footer is-flex">
+                        <a href="https://www.youtube.com/watch?v=VCyzHULCf9k" target="_blank"><i class="fab fa-youtube fa-2x is-centered is-justify-content-center"></i></a>
+                    </footer>
                 </div>
             </div>
         </div>
@@ -94,7 +116,9 @@ card component for elements, tag for category/genre-->
                     </figure>
                 </div>
                 <div class="card-content">
+                    <span class="tag is-success">Action-Adventure</span>
                     <div class="media">
+
                         <div class="media-content">
                             <p class="title is-4">The Legend of Zelda: Breath of the Wild</p>
                             <p class="subtitle is-6">Nintendo</p>
@@ -108,12 +132,14 @@ card component for elements, tag for category/genre-->
                         across
                         the kingdom of Hyrule to try and save the world and princess Zelda from Ganon.
                     </div>
+                    <footer class="card-footer is-flex">
+                        <a href="https://www.youtube.com/watch?v=6pA0Ia0G9Ac" target="_blank"><i class="fab fa-youtube fa-2x is-centered is-justify-content-center"></i></a>
+                    </footer>
                 </div>
             </div>
         </div>
         <!--Game 4-->
         <div class="column is-full-mobile is-one-quarter-desktop is-narrow">
-
             <div class="card">
                 <div class="card-image">
                     <figure class="image is-4by3">
@@ -122,13 +148,15 @@ card component for elements, tag for category/genre-->
                     </figure>
                 </div>
                 <div class="card-content">
+                    <span class="tag is-success">Action-Adventure</span>
                     <div class="media">
                         <div class="media-content">
-                            <p class="title is-4">Sea of Thieves</p>
-                            <p class="subtitle is-6">Rare</p>
+                            <div class="media-content">
+                                <p class="title is-4">Sea of Thieves</p>
+                                <p class="subtitle is-6">Rare</p>
+                            </div>
                         </div>
                     </div>
-
                     <div class="content">
                         Sea of Thieves is a multiplayer game where you can live your own pirate advanture, roaming
                         the
@@ -136,16 +164,19 @@ card component for elements, tag for category/genre-->
                         with
                         up to 3 friends. On your journey, you'll look for trasures and battle with others on your
                         way to
-                        becomùe
+                        become
                         a Pirate Legend.
                     </div>
+                    <footer class="card-footer is-flex">
+                        <a href="https://www.youtube.com/watch?v=r5JIBaasuE8" target="_blank"><i class="fab fa-youtube fa-2x is-centered is-justify-content-center"></i></a>
+                    </footer>
                 </div>
             </div>
         </div>
-
         <!--Game 5-->
         <div class="column is-full-mobile is-one-quarter-desktop is-narrow">
             <div class="card">
+
                 <div class="card-image">
                     <figure class="image is-4by3">
                         <img src="https://cdn03.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_Minecraft_image1280w.jpg"
@@ -153,6 +184,7 @@ card component for elements, tag for category/genre-->
                     </figure>
                 </div>
                 <div class="card-content">
+                    <span class="tag is-light">Sandbox</span><span class="tag is-dark">Survival</span>
                     <div class="media">
                         <div class="media-content">
                             <p class="title is-4">Minecraft</p>
@@ -161,18 +193,25 @@ card component for elements, tag for category/genre-->
                     </div>
 
                     <div class="content">
-                        In Minecraft, players explore a blocky, procedurally-generated 3D world with infinite terrain,
+                        In Minecraft, players explore a blocky, procedurally-generated 3D world with infinite
+                        terrain,
                         and
                         may discover and extract raw materials, craft tools and items, and build structures or
                         earthworks.
-                        Depending on game mode, players can fight computer-controlled "mobs", as well as cooperate with
+                        Depending on game mode, players can fight computer-controlled "mobs", as well as cooperate
+                        with
                         or
-                        compete against other players in the same world. Game modes include a survival mode, in which
+                        compete against other players in the same world. Game modes include a survival mode, in
+                        which
                         players must acquire resources to build the world and maintain health, and a creative mode,
                         where
-                        players have unlimited resources. Players can modify the game to create new gameplay mechanics,
+                        players have unlimited resources. Players can modify the game to create new gameplay
+                        mechanics,
                         items, and assets.
                     </div>
+                    <footer class="card-footer is-flex">
+                        <a href="https://www.youtube.com/watch?v=MmB9b5njVbA" target="_blank"><i class="fab fa-youtube fa-2x is-centered is-justify-content-center"></i></a>
+                    </footer>
                 </div>
             </div>
         </div>
@@ -186,6 +225,7 @@ card component for elements, tag for category/genre-->
                     </figure>
                 </div>
                 <div class="card-content">
+                    <span class="tag is-info">FPS</span><span class="tag is-link">Third Person Shooter</span>
                     <div class="media">
                         <div class="media-content">
                             <p class="title is-4">Star Wars Battlefront II (2017)</p>
@@ -194,16 +234,21 @@ card component for elements, tag for category/genre-->
                     </div>
 
                     <div class="content">
-                        This reboot of Star Wars Battlefront II has single-player and multiplayer game modes. Gameplay
+                        This reboot of Star Wars Battlefront II has single-player and multiplayer game modes.
+                        Gameplay
                         is
                         split in two main categories: ground battles and space battles.
                         Both occur across three eras:
-                        - the Clone Wars, with battles taking place between the Galactic Republic and the Confederacy of
+                        - the Clone Wars, with battles taking place between the Galactic Republic and the
+                        Confederacy of
                         Independent Systems;
                         - the Galactic Civil War, where battles between the Rebel Alliance and Galactic Empire take
                         place;
                         - and the war between the Resistance and the First Order.
                     </div>
+                    <footer class="card-footer is-flex">
+                        <a href="https://www.youtube.com/watch?v=_q51LZ2HpbE" target="_blank"><i class="fab fa-youtube fa-2x is-centered is-justify-content-center"></i>
+                    </footer>
                 </div>
             </div>
         </div>
@@ -217,6 +262,7 @@ card component for elements, tag for category/genre-->
                     </figure>
                 </div>
                 <div class="card-content">
+                    <span class="tag is-danger">MMORPG</span>
                     <div class="media">
                         <div class="media-content">
                             <p class="title is-4">Guild Wars II</p>
@@ -234,8 +280,10 @@ card component for elements, tag for category/genre-->
                         a
                         story that progresses in instanced environments.
                     </div>
+                    <footer class="card-footer is-flex">
+                        <a href="https://www.youtube.com/watch?v=Em0Sd60iI2w" target="_blank"></a><i class="fab fa-youtube fa-2x is-centered is-justify-content-center"></i>
+                    </footer>
                 </div>
-
             </div>
         </div>
         <!--Game 8-->
@@ -248,6 +296,7 @@ card component for elements, tag for category/genre-->
                     </figure>
                 </div>
                 <div class="card-content">
+                    <span class="tag is-warning">Action role-playing</span><span class="tag is-info">FPS</span>
                     <div class="media">
                         <div class="media-content">
                             <p class="title is-4">Cyberpunk 2077</p>
@@ -264,6 +313,9 @@ card component for elements, tag for category/genre-->
                         and
                         options for melee combat.
                     </div>
+                    <footer class="card-footer is-flex">
+                        <a href="https://www.youtube.com/watch?v=ixl31324UxE" targer="_blank"><i class="fab fa-youtube fa-2x is-centered is-justify-content-center"></i></a>
+                    </footer>
                 </div>
             </div>
 
@@ -278,6 +330,7 @@ card component for elements, tag for category/genre-->
                     </figure>
                 </div>
                 <div class="card-content">
+                    <span class="tag is-warning">Action role-playing</span>
                     <div class="media">
                         <div class="media-content">
                             <p class="title is-4">The Witcher 3 : Wild Hunt</p>
@@ -286,17 +339,23 @@ card component for elements, tag for category/genre-->
                     </div>
 
                     <div class="content">
-                        The game takes place in a fictional fantasy world based on Slavonic mythology. Players control
-                        protagonist Geralt of Rivia, a monster slayer for hire known as a Witcher who is looking for his
+                        The game takes place in a fictional fantasy world based on Slavonic mythology. Players
+                        control
+                        protagonist Geralt of Rivia, a monster slayer for hire known as a Witcher who is looking for
+                        his
                         missing adopted daughter on the run from the Wild Hunt, an otherworldly force determined to
                         capture
                         her. Players battle the game's many dangers with weapons and magic, interact with non-player
                         characters, and complete quests to acquire experience points and gold, which are used to
                         increase
-                        Geralt's abilities and purchase equipment. Its central story has several endings, determined by
+                        Geralt's abilities and purchase equipment. Its central story has several endings, determined
+                        by
                         the
                         player's choices at certain points in the game.
                     </div>
+                    <footer class="card-footer is-flex">
+                        <a href="https://www.youtube.com/watch?v=TZ_G6XiHoUA" targer="_blank"><i class="fab fa-youtube fa-2x is-centered is-justify-content-center"></i></a>
+                    </footer>
                 </div>
             </div>
         </div>
@@ -310,21 +369,30 @@ card component for elements, tag for category/genre-->
                     </figure>
                 </div>
                 <div class="card-content">
+                    <span class="tag is-success">Action-Adventure</span>
                     <div class="media">
                         <div class="media-content">
-                            <p class="title is-4">Red Dead Redemption II</p>
-                            <p class="subtitle is-6">Rockstar Studios</p>
+
+                            <div class="media-content">
+                                <p class="title is-4">Red Dead Redemption II</p>
+                                <p class="subtitle is-6">Rockstar Studios</p>
+                            </div>
                         </div>
                     </div>
-
                     <div class="content">
-                        The story is set in 1899 in a fictionalized representation of the Western, Midwestern, and
+                        The story is set in 1899 in a fictionalized representation of the Western, Midwestern,
+                        and
                         Southern
-                        United States and follows outlaw Arthur Morgan, a member of the Van der Linde gang. Arthur must
+                        United States and follows outlaw Arthur Morgan, a member of the Van der Linde gang.
+                        Arthur must
                         deal
-                        with the decline of the Wild West whilst attempting to survive against government forces, rival
+                        with the decline of the Wild West whilst attempting to survive against government
+                        forces, rival
                         gangs, and other adversaries.
                     </div>
+                    <footer class="card-footer is-flex">
+                        <a href="https://www.youtube.com/watch?v=F63h3v9QV7w" target="_blank"><i class="fab fa-youtube fa-2x is-centered is-justify-content-center"></i></a>
+                    </footer>
                 </div>
             </div>
         </div>

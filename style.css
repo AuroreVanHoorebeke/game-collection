@@ -1,0 +1,34 @@
+/* div.column.header {
+    display: flex;
+    flex-direction: row;
+} */
+
+@media screen and (max-width: 1024px){
+    img.is-rounded {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
+
+
+
+img.is-rounded {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+
+}
+
+i.fab {
+    color: red;
+    transition-duration: 2s;
+}
