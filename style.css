@@ -14,21 +14,44 @@
 }
 
 
-
-
 img.is-rounded {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.card-footer {
-    display: flex;
-    justify-content: center;
+.card {
+    height: 100%;
 
+}
+div.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.card-content {
+    height: 100%;
+}
+
+.card-footer {
+    margin-top: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
 }
 
 i.fab {
-    color: red;
-    transition-duration: 2s;
+    margin-top: auto;
+    color: lightgray;
+    position: relative;
+    bottom: 0;
+
+}
+
+i.fab:hover {
+    color: #FF0000;
+    transition-duration: 1s;
 }
