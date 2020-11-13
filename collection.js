@@ -181,7 +181,7 @@ for (let element of collection) {
 
     const description = document.createElement('p');
     description.className = "content";
-    description.style.padding = '20px';
+    description.style.paddingBottom = '20px';
     description.textContent = element.description;
 
     //footer
@@ -205,7 +205,6 @@ for (let element of collection) {
     cardImgDiv.appendChild(cardImgFigure);
     cardImgFigure.appendChild(cardImg);
     cardDiv.appendChild(cardContent);
-    // cardContent.appendChild(tag);
     cardContent.appendChild(media);
     media.appendChild(mediaContent);
     mediaContent.appendChild(titleCard);
